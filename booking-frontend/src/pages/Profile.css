@@ -1,0 +1,504 @@
+/* src/styles/Profile.css */
+
+.profile-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-container-new {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section - Yellow Card */
+.profile-left-section {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card-yellow {
+  text-align: center;
+  color: #333;
+}
+
+.profile-avatar-large {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-icon-large {
+  font-size: 5rem;
+}
+
+.profile-welcome {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.profile-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.profile-back-btn {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.profile-back-btn:hover {
+  background: #34495e;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-next-btn {
+  width: 60px;
+  height: 60px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-next-btn:hover {
+  background: #34495e;
+  transform: scale(1.1);
+}
+
+/* Right Section - Form */
+.profile-right-section {
+  padding: 3rem;
+}
+
+.profile-form-new {
+  max-width: 600px;
+}
+
+.form-group-profile {
+  margin-bottom: 1.5rem;
+}
+
+.form-group-profile label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.form-group-profile input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: #f9f9f9;
+}
+
+.form-group-profile input:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: white;
+}
+
+.form-group-profile input:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-edit,
+.btn-save,
+.btn-cancel {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-edit {
+  background: #2c5530;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #1e3d21;
+  transform: translateY(-2px);
+}
+
+.btn-save {
+  background: #4ecdc4;
+  color: white;
+}
+
+.btn-save:hover {
+  background: #3db8af;
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background: #d0d0d0;
+}
+
+/* Booking History Section */
+.booking-history-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-container {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background: #2c5530;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: #1e3d21;
+  transform: translateX(-5px);
+}
+
+.profile-title,
+.booking-history-title {
+  color: #2c5530;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-details {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #2c5530 0%, #1e3d21 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-icon {
+  font-size: 3rem;
+}
+
+.profile-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.profile-details p strong {
+  color: #2c5530;
+  margin-right: 0.5rem;
+}
+
+/* --- Riwayat Booking --- */
+.booking-list-container {
+  margin-top: 20px;
+}
+
+.booking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.booking-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.booking-info .field-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2c5530;
+}
+
+.booking-info .booking-date {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.no-bookings {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.no-bookings p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.book-now-link {
+  display: inline-block;
+  background: #2c5530;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.book-now-link:hover {
+  background: #1e3d21;
+  transform: translateY(-2px);
+}
+
+/* --- Status Badge --- */
+.status-badge {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.status-badge.pending,
+.status-badge.waiting-payment {
+  background-color: #f39c12;
+}
+
+.status-badge.confirmed,
+.status-badge.selesai {
+  background-color: #27ae60;
+}
+
+.status-badge.completed {
+  background-color: #3498db;
+}
+
+.status-badge.canceled,
+.status-badge.cancelled,
+.status-badge.dibatalkan {
+  background-color: #e74c3c;
+}
+
+/* Payment Buttons */
+.booking-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-chat {
+  background: linear-gradient(135deg, #1a5490 0%, #2c5530 100%);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(26, 84, 144, 0.2);
+}
+
+.btn-chat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 84, 144, 0.3);
+}
+
+.btn-pay {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.btn-pay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.payment-pending {
+  color: #f39c12;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  background: #fff3cd;
+  border-radius: 8px;
+}
+
+.payment-paid {
+  color: #27ae60;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  background: #d4edda;
+  border-radius: 8px;
+}
+
+.booking-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f39c12;
+  margin-top: 0.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .profile-container-new {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-left-section {
+    padding: 2rem;
+  }
+
+  .profile-avatar-large {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-icon-large {
+    font-size: 4rem;
+  }
+
+  .profile-welcome {
+    font-size: 1.5rem;
+  }
+
+  .profile-right-section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-edit,
+  .btn-save,
+  .btn-cancel {
+    width: 100%;
+  }
+
+  .booking-history-section {
+    padding: 1.5rem;
+  }
+}

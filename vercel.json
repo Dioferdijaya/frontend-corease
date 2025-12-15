@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd booking-frontend && npm install && npm run build",
+  "outputDirectory": "booking-frontend/build",
+  "installCommand": "cd booking-frontend && npm install",
+  "framework": null
+}

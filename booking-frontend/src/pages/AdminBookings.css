@@ -1,0 +1,217 @@
+/* src/styles/AdminBookings.css */
+
+.admin-bookings-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.back-btn-admin {
+  background: #2c5530;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.back-btn-admin:hover {
+  background: #1e3d21;
+  transform: translateX(-5px);
+}
+
+.admin-bookings-title {
+  color: #2c5530;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.booking-card-admin {
+  background: white;
+  border-left: 5px solid #2c5530;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.booking-card-admin:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.booking-details-admin h3 {
+  margin: 0 0 1rem 0;
+  color: #2c5530;
+  font-size: 1.3rem;
+}
+
+.booking-details-admin p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.booking-details-admin .user-info {
+  font-style: italic;
+  color: #666;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.booking-details-admin .status-line {
+  margin-top: 1rem;
+}
+
+/* --- Payment Status --- */
+.payment-status-line {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed #dee2e6;
+}
+
+.payment-badge {
+  margin-left: 8px;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.payment-badge.payment-paid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.payment-badge.payment-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.payment-badge.payment-unpaid {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* --- Warning Message --- */
+.warning-message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 6px;
+  color: #856404;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* --- Teks Status --- */
+.status-text {
+  margin-left: 8px;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.status-text.status-pending,
+.status-text.status-waiting_payment {
+  background-color: #f39c12;
+}
+
+.status-text.status-confirmed {
+  background-color: #27ae60;
+}
+
+.status-text.status-completed {
+  background-color: #3498db;
+}
+
+.status-text.status-rejected,
+.status-text.status-cancelled {
+  background-color: #e74c3c;
+}
+
+/* --- Tombol Aksi --- */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-confirm,
+.btn-complete {
+  background-color: #27ae60;
+}
+
+.btn-confirm:hover,
+.btn-complete:hover {
+  background-color: #229954;
+}
+
+.btn-reject {
+  background-color: #e74c3c;
+}
+
+.btn-reject:hover {
+  background-color: #c0392b;
+}
+
+.no-bookings-admin {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
